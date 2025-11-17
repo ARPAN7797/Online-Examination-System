@@ -1,0 +1,6 @@
+services :
+   - type : web
+     name : exam-system
+     env : python
+     buildcommand : pip install -r requirements.txt
+     startcommand : gunicorn exam_system:app
